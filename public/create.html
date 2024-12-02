@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <body>
+        <h3>
+            Remote IP: {{ remoteip }} <br>
+            Local IP: {{ localip }} <br>
+            gre1 IP: {{ greip1 }} <br>
+            defaultroute: {{defaultroute}} <br>
+            Bridge: {{ bridgename }} <br>
+            Gateway: {{ gateway }} <br>
+            Start: {{ startrange }} <br>
+            End: {{ endrange }} <br>
+        </h3>
+        <br>
+        <p>Use this command to instantly create the networking bridge + configure Noez IPs: <br><br><strong>curl -s https://gre-generator.zorritohosting.com/curl/{{fGenerateURL}} | bash</strong></p>
+        <br>
+        <p style="color: red;">Make sure to remember your command. It will be remove periodically.</p>
+        <form action="/">
+            <input type="submit" value="Go back" />
+        </form>
+        <br>
+    </body>
+</html>
